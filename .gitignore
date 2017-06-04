@@ -1,0 +1,4 @@
+# Ignore everything
+backup/
+node_modules/
+
