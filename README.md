@@ -10,10 +10,10 @@ All contributions except for those by Z.A.P team members will be denied.
 - Make a fork of the project and clone it to your computer: https://guides.github.com/activities/forking/
 
 #### Making changes
-- Open `index.html` in a compatible text editor - I suggest https://notepad-plus-plus.org/
-- Open `index.html` in browser to see changes.
+- Open `index.html` or `info.html` in a compatible text editor - I suggest https://notepad-plus-plus.org/
+- Open HTML file in browser to see changes.
 - In case you need help formatting - [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
 #### Submitting
-- Submit a pull request to this project. https://guides.github.com/activities/forking/
+- Submit a pull request to this project - https://guides.github.com/activities/forking/
 - I will review the changes, and if they work, I will build and deploy the website.
