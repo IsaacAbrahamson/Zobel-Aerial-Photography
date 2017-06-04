@@ -12,7 +12,7 @@ All contributions except for those by Z.A.P team members will be denied.
 #### Making changes
 - Open `index.html` in a compatible text editor - I suggest https://notepad-plus-plus.org/
 - Open `index.html` in browser to see changes.
-- In case you need help formatting - [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics
+- In case you need help formatting - [HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
 
 #### Submitting
 - Submit a pull request to this project. https://guides.github.com/activities/forking/
