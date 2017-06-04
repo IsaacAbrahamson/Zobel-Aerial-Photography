@@ -17,3 +17,6 @@ All contributions except for those by Z.A.P team members will be denied.
 #### Submitting
 - Submit a pull request to this project - https://guides.github.com/activities/forking/
 - I will review the changes, and if they work, I will build and deploy the website.
+
+#### Additional
+- Be sure to keep your fork updated with mine as I make frequent changes - https://help.github.com/desktop/guides/contributing/syncing-your-branch/
