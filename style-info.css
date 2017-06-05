@@ -151,3 +151,7 @@ hr.location {
   height: 600px;
   background-color: grey;
 }
+
+.map-container {
+  margin-bottom: 120px;
+}

@@ -58,8 +58,9 @@
   function initMap() {
     var coords = {lat: 41.77, lng: -91.13};
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 8,
-      center: coords
+      zoom: 7,
+      center: coords,
+      mapTypeId: 'terrain'
     });
     var marker = new google.maps.Marker({
       position: coords,
