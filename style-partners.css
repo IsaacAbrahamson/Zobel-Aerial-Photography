@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500');
+
+@font-face {
+  font-family: logo;
+  src: url(./fonts/blade.ttf);
+}
+
+::selection {
+  background: rgba(31, 140, 235, 0.2); 
+}
+
+h1, h2, h3, h4, p, a {
+ color: #4a4a4a;
+ font-family: 'Montserrat';
+}
+
+/* nav and header */
+
+nav {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-inner {
+  width: 80%;
+  display: inline-block;
+}
+
+nav .logo:link, nav .logo:hover, nav .logo:visited, nav .logo:active  {
+  float: left;
+  color: #4a4a4a;
+  font-family: logo;
+  font-size: 50px;
+  border-top: 3px solid #48a8ff;
+  border-bottom: 3px solid #48a8ff;
+  line-height: 109%;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+nav ul {
+  float: right;
+  margin-top: 12px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+nav li:last-child {
+  margin-right: 0px;
+}
+
+nav a:link, nav a:hover, nav a:active, nav a:visited {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color .4s;
+}
+
+nav a:hover {
+  color: #1f8ceb;
+}
+
+.container {
+  margin-top: 8vh;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+h2 span {
+  color: #1f8ceb;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 200;
+  width: 60%;
+  display: block;
+}
+
+.credits {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.credits a {
+  color: #4a4a4a;
+  font-weight: 400;  
+  font-size: 17px;
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+}
