@@ -14,8 +14,6 @@ h1, h2, h3, h4, p, a {
  font-family: 'Montserrat';
 }
 
-/* nav and header */
-
 nav {
   position: absolute;
   top: 40px;
@@ -28,7 +26,7 @@ nav {
   display: inline-block;
 }
 
-nav .logo:link, nav .logo:hover, nav .logo:visited, nav .logo:active  {
+nav .logo:link, nav .logo:hover, nav .logo:active, nav .logo:visited {
   float: left;
   color: #4a4a4a;
   font-family: logo;
@@ -36,8 +34,6 @@ nav .logo:link, nav .logo:hover, nav .logo:visited, nav .logo:active  {
   border-top: 3px solid #48a8ff;
   border-bottom: 3px solid #48a8ff;
   line-height: 109%;
-  cursor: pointer;
-  font-weight: 400;
 }
 
 nav ul {
@@ -48,9 +44,10 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 40px;
+  text-align: center;
 }
 
-nav li:last-child {
+nav li.contact-link {
   margin-right: 0px;
 }
 
@@ -63,8 +60,35 @@ nav a:link, nav a:hover, nav a:active, nav a:visited {
 }
 
 nav a:hover {
-  color: #1f8ceb;
+  color: rgba(255, 255, 255, 0.6)
 }
+
+nav li.mobile-menu {
+  display: none;  
+  margin-right: 0px;
+}
+
+.mobile-menu i {  
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .nav-inner {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav li {
+    display: none;
+  }
+
+  nav li.mobile-menu {
+    display: block;
+  }
+}
+
+
 
 .container {
   margin-top: 8vh;
@@ -90,6 +114,25 @@ p {
   display: block;
 }
 
+@media only screen and (max-width: 1000px) {
+  p {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  p {
+    width: 95%;
+    font-size: 18px;
+  }
+}
+
 .credits {
   margin-top: 30px;
   display: inline-block;
@@ -102,4 +145,10 @@ p {
   display: block;
   text-align: left;
   margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 440px) {
+  .credits a {
+    margin-bottom: 12px;
+  }
 }
