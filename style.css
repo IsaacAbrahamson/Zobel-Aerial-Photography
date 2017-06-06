@@ -730,6 +730,19 @@ footer a, footer a:hover, footer a:active, footer a:visited {
   font-size: 12px;
 }
 
+@media only screen and (max-width: 991px) {
+  footer .col-md-2 li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  footer .middle-col {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 
 
 
