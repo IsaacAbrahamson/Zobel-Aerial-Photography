@@ -371,9 +371,10 @@ hr {
   font-size: 17px;
 }
 
-#about .col-md-4 {
+#about .col-lg-4 {
   padding-left: 40px;
   padding-right: 40px;
+  text-align: center;
 }
 
 .drone-link, .drone-link:hover, .drone-link:active, .drone-link:visited {
@@ -389,6 +390,58 @@ hr {
 #about .btn {
   margin-top: 80px;
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 1500px) {
+  #about .container-fluid {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #about p {
+    font-size: 17px;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 80px;
+  }
+
+  #about .btn {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  #about p, #about .drone-link {    
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #about p {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  #about .container-fluid {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #about p {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  #about p {
+    width: 95%;
+  }
+
+  #about p, #about .drone-link {    
+    font-size: 17px;
+  }
 }
 
 
