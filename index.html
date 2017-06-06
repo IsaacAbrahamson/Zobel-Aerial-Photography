@@ -15,7 +15,8 @@
 <link rel="stylesheet" href="./icons.css">
 
 <!-- user stylesheet-->
-<link rel="stylesheet" href="./style.min.css">
+<link rel="stylesheet" href="./style.css">
+<!--<link rel="stylesheet" href="./style.min.css">-->
 
 <!-- Init Wow.js-->
 <script src="./wow.min.js"></script>
@@ -31,7 +32,8 @@
     </div>
   </div>
 </header>
-<div id="about">
+
+<!--<section id="about">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4">
@@ -52,9 +54,11 @@
     </div>
     <a class="btn btn-blue" href="info">Learn more</a>
   </div>
-</div>
+</section>
+
 <hr>
-<div id="portfolio">
+
+<section id="portfolio">
   <h2><span>Check out</span> our work</h2>
   <div class="container-fluid">
     <div class="row row-top">
@@ -87,8 +91,9 @@
       </div>
     </div>
   </div>
-</div>
-<div id="contact">
+</section>
+
+<section id="contact">
   <div class="overlay">
     <h2>Ready for <span>takeoff</span></h2>
     <div class="contact-info">
@@ -115,12 +120,15 @@
       </div>
     </div>
   </div>
-</div>
-<div id="weather">
+</section>
+
+<section id="weather">
   <h2><span>Latest</span> flying forecast</h2>
   <div class="container flex" id="weatherWeek"></div>
-</div>
+</section>
+
 <hr class="bottom">
+
 <footer class="container">
   <div class="row">
     <div class="col-md-4 first-col">
@@ -138,14 +146,16 @@
       </ul>
     </div>
   </div>
-</footer>
+</footer>-->
+
 <nav>
   <div class="nav-inner animated fadeInDown">
     <div class="logo">ZAP</div>
     <ul>
       <li><a href="info">info</a></li>
       <li><a href="#portfolio" data-scroll>portfolio</a></li>
-      <li><a href="#contact" data-scroll>contact</a></li>
+      <li class="contact-link"><a href="#contact" data-scroll>contact</a></li>
+      <li class="mobile-menu"><a data-scroll><i class="fa fa-bars"></i></a></li>
     </ul>
   </div>
 </nav>

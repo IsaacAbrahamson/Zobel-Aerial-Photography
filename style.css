@@ -46,9 +46,10 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 40px;
+  text-align: center;
 }
 
-nav li:last-child {
+nav li.contact-link {
   margin-right: 0px;
 }
 
@@ -62,6 +63,67 @@ nav a, nav a:hover, nav a:active, nav a:visited {
 
 nav a:hover {
   color: rgba(255, 255, 255, 0.6)
+}
+
+nav li.mobile-menu {
+  display: none;  
+  margin-right: 0px;
+}
+
+.mobile-menu i {  
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .nav-inner {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-inner {
+    width: 75%;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  nav li.mobile-menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  nav {
+    top: 20px;
+  }
+
+  nav .logo {
+    font-size: 40px;
+    border-top: 3px solid #48a8ff;
+    border-bottom: 3px solid #48a8ff;
+    line-height: 110%;
+  }
+  .mobile-menu i {  
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  nav {
+    top: 20px;
+  }
+
+  nav .logo {
+    font-size: 40px;
+    border-top: 3px solid #48a8ff;
+    border-bottom: 3px solid #48a8ff;
+    line-height: 110%;
+  }
+  .mobile-menu i {  
+    font-size: 28px;
+  }
 }
 
 header {
@@ -86,7 +148,7 @@ header .content {
   flex-flow: column;
   width: 48%;
   text-align: center;
-  margin-top: 27vh;
+  justify-content: center;
 }
 
 .flex {
@@ -107,6 +169,68 @@ h1 span {
 
 .info-buttons {
   display: inline-block;
+}
+
+@media only screen and (max-width: 1675px) {
+  header .content {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 1460px) {
+  header .content {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  header .content {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header .content {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 47px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  header .content {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  header .content {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
 }
 
 
@@ -177,6 +301,41 @@ hr {
 
 .btn-portfolio:hover i {
   left: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn, .btn:hover, .btn:active, .btn:visited {
+    height: 42px;
+    padding: 0 18px;
+    font-size: 16px;
+    line-height: 42px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 390px) {  
+  .btn, .btn:hover, .btn:active, .btn:visited {
+    margin-top: 40px;
+  }
+  .btn-portfolio {
+    margin-top: 20px!important;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .btn, .btn:hover, .btn:active, .btn:visited {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .btn, .btn:hover, .btn:active, .btn:visited {
+    height: 42px;
+    padding: 0 18px;
+    font-size: 16px;
+    line-height: 42px;
+    margin-top: 20px;
+  }
 }
 
 
