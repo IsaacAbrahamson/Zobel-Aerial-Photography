@@ -14,7 +14,7 @@ gulp.task('build', shell.task([
 gulp.task('deploy', [], () => {
   return surge({
     project: './', 
-    domain: 'zobelaerial.surge.sh' 
+    domain: 'zobelaerialphotography.com' 
   })
 })
 
