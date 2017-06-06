@@ -14,8 +14,6 @@ h1, h2, h3, h4, p, a {
  font-family: 'Montserrat';
 }
 
-/* nav and header */
-
 nav {
   position: absolute;
   top: 40px;
@@ -28,7 +26,7 @@ nav {
   display: inline-block;
 }
 
-nav .logo:link, nav .logo:hover, nav .logo:visited, nav .logo:active  {
+nav .logo:link, nav .logo:hover, nav .logo:active, nav .logo:visited {
   float: left;
   color: #4a4a4a;
   font-family: logo;
@@ -36,8 +34,6 @@ nav .logo:link, nav .logo:hover, nav .logo:visited, nav .logo:active  {
   border-top: 3px solid #48a8ff;
   border-bottom: 3px solid #48a8ff;
   line-height: 109%;
-  cursor: pointer;
-  font-weight: 400;
 }
 
 nav ul {
@@ -48,9 +44,10 @@ nav ul {
 nav li {
   display: inline-block;
   margin-right: 40px;
+  text-align: center;
 }
 
-nav li:last-child {
+nav li.contact-link {
   margin-right: 0px;
 }
 
@@ -63,8 +60,43 @@ nav a:link, nav a:hover, nav a:active, nav a:visited {
 }
 
 nav a:hover {
-  color: #1f8ceb;
+  color: rgba(255, 255, 255, 0.6)
 }
+
+nav li.mobile-menu {
+  display: none;  
+  margin-right: 0px;
+}
+
+.mobile-menu i {  
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .nav-inner {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav li {
+    display: none;
+  }
+
+  nav li.mobile-menu {
+    display: block;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .video {
+    margin-bottom: 40px;
+  }
+}
+
 
 .container {
   text-align: center;
@@ -75,7 +107,7 @@ nav a:hover {
   margin-top: 120px;
 }
 .container-top {  
-  margin-top: 20vh;
+  margin-top: 180px;
   margin-bottom: 120px;
 }
 
@@ -83,6 +115,19 @@ nav a:hover {
   margin-top: 120px;
   margin-bottom: 12vh;
   position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .container {  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container-top {  
+    margin-top: 150px;
+  }
 }
 
 h2 {
@@ -95,9 +140,13 @@ h2 span {
   color: #1f8ceb;
 }
 
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
   width: 60%;
@@ -136,14 +185,76 @@ p span {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 500px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  p {
+    font-size: 15px;
+  }
+}
+
 hr.location {
   margin-top: 120px;
   margin-bottom: 120px;
 }
 
+@media only screen and (max-height: 700px) {
+  .container-top {
+    margin-bottom: 80px;
+  }
+
+  .container-me {
+    margin-top: 80px;
+  }
+
+  hr.location {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
 .location-info {
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 15px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 920px) {
+  .location-info {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .location-info {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .location-info {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .location-info {
+    width: 90%;
+  }
 }
 
 #map {
@@ -153,5 +264,17 @@ hr.location {
 }
 
 .map-container {
-  margin-bottom: 120px;
+  margin-bottom: 7vh;
+}
+
+@media only screen and (max-height: 800px) {
+  #map {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #map {
+    height: 300px;
+  }
 }
