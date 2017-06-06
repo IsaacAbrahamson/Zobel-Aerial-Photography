@@ -2156,7 +2156,7 @@ var updatePage = function () {
             for (_iterator2 = (0, _getIterator3.default)(week); !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
               day = _step2.value;
 
-              $('#weatherWeek').append('\n      <div class="weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n        <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n        <div class="weatherSafety">' + checkSafety(day.weather[0].id) + '</div>\n        <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n        <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n      </div>\n    ');
+              $('#weatherWeek').append('\n      <div class="col-5 weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n        <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n        <div class="weatherSafety">' + checkSafety(day.weather[0].id) + '</div>\n        <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n        <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n      </div>\n    ');
               counter++;
             }
             _context2.next = 16;

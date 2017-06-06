@@ -86,7 +86,7 @@ async function updatePage() {
   let counter = 1;
   for (let day of week) {  
     $('#weatherWeek').append(`
-      <div class="weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
+      <div class="col-5 weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
         <div class="weatherDate">${parseDate(day.dt_txt)}</div>
         <div class="weatherSafety">${checkSafety(day.weather[0].id)}</div>
         <div class="weatherIcon ${getIcon(day.weather[0].id)}"></div>

@@ -655,7 +655,7 @@ h2 span {
 
 
 #weatherWeek {
-  justify-content: center;
+  /*justify-content: center;*/
   padding: 2em;
   margin: 0 auto;
   color: white;
@@ -663,10 +663,6 @@ h2 span {
   text-align: center;
   background-color: currentColor;
   margin-top: 80px;
-}
-
-.weatherDay {
-  margin: 0px 20px;
 }
 
 .weatherDate, .weatherDesc {
@@ -701,6 +697,12 @@ h2 span {
 
 .weatherSafety .okay i {
   margin-right: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  #weather {
+    display: none;
+  }
 }
 
 /* footer */
@@ -1014,5 +1016,57 @@ footer a, footer a:hover, footer a:active, footer a:visited {
     color: #4a4a4a;
     background: #4a4a4a;
     opacity: 0.2;
+  }
+}
+
+.col-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-5 {
+    width: 20%;
+    float: left;
+}
+
+@media (max-width: 1200px) {
+  .col-5 {
+    width: 33.3%;
+    float: left;
+  }
+
+  .col-5:nth-child(4), .col-5:nth-child(5) {
+    margin-top: 80px;
+    width: 50%;
+    float: left;
+  }
+
+  .col-5:nth-child(4) {
+    padding-left: 15%;
+  }
+
+  .col-5:nth-child(5) {
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 750px) {
+  .col-5 {
+    width: 50%;
+    float: left;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+  }
+
+  .col-5:nth-child(3), .col-5:nth-child(4), .col-5:nth-child(5) {
+    margin-top: 80px;
+    width: 50%;
+    float: left;
+  }
+
+  .col-5:nth-child(5) {
+    display: none;
   }
 }
