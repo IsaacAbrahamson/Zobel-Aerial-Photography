@@ -1,1 +1,1 @@
-- new WOW({mobile:false}).init()
+new WOW({mobile:false}).init()

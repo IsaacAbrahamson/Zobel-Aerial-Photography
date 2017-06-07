@@ -1,0 +1,22 @@
+{
+  "name": "zobel-aerial-photography",
+  "description": "Developed by Isaac Abrahamson for Zobel Aerial Photography",
+  "main": "index.js",
+  "authors": [
+    "Isaac Abrahamson <isaac.abrahamson@programmer.net>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/IsaacAbrahamson/zobel-aerial-photography",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fetch-polyfill": "^0.8.2",
+    "es6-promise": "^4.0.5"
+  }
+}

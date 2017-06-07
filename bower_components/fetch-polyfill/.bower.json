@@ -1,0 +1,28 @@
+{
+  "name": "fetch-polyfill",
+  "version": "0.8.2",
+  "main": "fetch.js",
+  "devDependencies": {
+    "es6-promise": "2.1.0"
+  },
+  "ignore": [
+    ".*",
+    "*.md",
+    "examples/",
+    "Makefile",
+    "package.json",
+    "script/",
+    "test/"
+  ],
+  "homepage": "https://github.com/undoZen/fetch",
+  "_release": "0.8.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.8.2",
+    "commit": "2afa1cf552ec5770494318c9085703f4b0659c27"
+  },
+  "_source": "https://github.com/undoZen/fetch.git",
+  "_target": "^0.8.2",
+  "_originalSource": "fetch-polyfill",
+  "_direct": true
+}

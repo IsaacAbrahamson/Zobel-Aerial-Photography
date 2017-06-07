@@ -2051,7 +2051,11 @@ var getWeather = function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _context.prev = 0;
+            if (!self.fetch) {
+              _context.next = 30;
+              break;
+            }
+
             _context.next = 3;
             return fetch(WEATHER_LINK);
 
@@ -2059,7 +2063,6 @@ var getWeather = function () {
             response = _context.sent;
             _context.next = 6;
             return response.json
-
             // weather data at 12:00 P.M. for each day in 5 day forecast
             ();
 
@@ -2113,17 +2116,14 @@ var getWeather = function () {
             return _context.abrupt('return', forecast);
 
           case 30:
-            _context.prev = 30;
-            _context.t1 = _context['catch'](0);
+            return _context.abrupt('return', undefined);
 
-            console.warn(_context.t1);
-
-          case 33:
+          case 31:
           case 'end':
             return _context.stop();
         }
       }
-    }, _callee, this, [[0, 30], [11, 15, 19, 27], [20,, 22, 26]]);
+    }, _callee, this, [[11, 15, 19, 27], [20,, 22, 26]]);
   }));
 
   return function getWeather() {
@@ -2145,7 +2145,10 @@ var updatePage = function () {
           case 2:
             week = _context2.sent;
 
-            console.log(week);
+            if (!week) {
+              _context2.next = 27;
+              break;
+            }
 
             counter = 1;
             _iteratorNormalCompletion2 = true;
@@ -2156,7 +2159,7 @@ var updatePage = function () {
             for (_iterator2 = (0, _getIterator3.default)(week); !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
               day = _step2.value;
 
-              $('#weatherWeek').append('\n      <div class="col-5 weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n        <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n        <div class="weatherSafety">' + checkSafety(day.weather[0].id) + '</div>\n        <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n        <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n      </div>\n    ');
+              $('#weatherWeek').append('\n        <div class="col-5 weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n          <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n          <div class="weatherSafety">' + checkSafety(day.weather[0].id) + '</div>\n          <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n          <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n        </div>\n      ');
               counter++;
             }
             _context2.next = 16;
@@ -2194,8 +2197,14 @@ var updatePage = function () {
 
           case 24:
             updateWeatherIcons();
+            _context2.next = 28;
+            break;
 
-          case 25:
+          case 27:
+            // browser does not support fetch data or an error occured
+            $('#weather').remove();
+
+          case 28:
           case 'end':
             return _context2.stop();
         }

@@ -64,38 +64,41 @@ function degToCompass(num) {
 }
 
 async function getWeather() {
-  try {
+  if (self.fetch) {
     let response = await fetch(WEATHER_LINK)
     let data = await response.json()
-
     // weather data at 12:00 P.M. for each day in 5 day forecast
     let forecast = []
     for (let item of data.list) {
       if (item.dt_txt.split(' ').pop().slice(0, 2) == 12) forecast.push(item)
     }
     return forecast
-  } catch (err) {
-    console.warn(err)
-  }
+  } else {
+      return undefined
+  }  
 }
 
 async function updatePage() {
   let week = await getWeather()
-  console.log(week)
-
-  let counter = 1;
-  for (let day of week) {  
-    $('#weatherWeek').append(`
-      <div class="col-5 weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
-        <div class="weatherDate">${parseDate(day.dt_txt)}</div>
-        <div class="weatherSafety">${checkSafety(day.weather[0].id)}</div>
-        <div class="weatherIcon ${getIcon(day.weather[0].id)}"></div>
-        <div class="weatherDesc">${Math.round(day.wind.speed)} mph, ${degToCompass(day.wind.deg)}</div>
-      </div>
-    `)
-    counter++
+  if (week) {
+    let counter = 1;
+    for (let day of week) {  
+      $('#weatherWeek').append(`
+        <div class="col-5 weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
+          <div class="weatherDate">${parseDate(day.dt_txt)}</div>
+          <div class="weatherSafety">${checkSafety(day.weather[0].id)}</div>
+          <div class="weatherIcon ${getIcon(day.weather[0].id)}"></div>
+          <div class="weatherDesc">${Math.round(day.wind.speed)} mph, ${degToCompass(day.wind.deg)}</div>
+        </div>
+      `)
+      counter++
+    }
+    updateWeatherIcons()
+  } else {
+    // browser does not support fetch data or an error occured
+    $('#weather').remove()
   }
-  updateWeatherIcons()
+  
 }
 
 updatePage()
