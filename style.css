@@ -1149,6 +1149,7 @@ main.noscroll {
 .dropdown-links a {
   color: #1f8ceb;
   font-size: 30px;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1300px) {
