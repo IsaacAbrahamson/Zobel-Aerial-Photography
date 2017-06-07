@@ -25,11 +25,13 @@ function getIcon(weatherID) {
   else if (weatherID >= 200) return 'thunder-storm'
 }
 
-function checkSafety(weatherID) {
-  if (weatherID > 800) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>'
+function checkSafety(weatherID, windSpeed) {
+  if (windSpeed > 10) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
+  else if (windSpeed > 6) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>slight winds</p>'
+  else if (weatherID > 800) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>'
   else if (weatherID == 800) return '<p class="good"><i class="fa fa-check"></i>clear skies</p>'
   else if (weatherID >= 700) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
-  else if (weatherID >= 600) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i> ow visibility</p>'
+  else if (weatherID >= 600) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>'
   else if (weatherID >= 500) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
   else if (weatherID >= 300) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
   else if (weatherID >= 200) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
@@ -86,7 +88,7 @@ async function updatePage() {
       $('#weatherWeek').append(`
         <div class="col-5 weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
           <div class="weatherDate">${parseDate(day.dt_txt)}</div>
-          <div class="weatherSafety">${checkSafety(day.weather[0].id)}</div>
+          <div class="weatherSafety">${checkSafety(day.weather[0].id, Math.round(day.wind.speed))}</div>
           <div class="weatherIcon ${getIcon(day.weather[0].id)}"></div>
           <div class="weatherDesc">${Math.round(day.wind.speed)} mph, ${degToCompass(day.wind.deg)}</div>
         </div>

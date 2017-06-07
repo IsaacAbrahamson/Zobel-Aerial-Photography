@@ -2159,7 +2159,7 @@ var updatePage = function () {
             for (_iterator2 = (0, _getIterator3.default)(week); !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
               day = _step2.value;
 
-              $('#weatherWeek').append('\n        <div class="col-5 weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n          <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n          <div class="weatherSafety">' + checkSafety(day.weather[0].id) + '</div>\n          <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n          <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n        </div>\n      ');
+              $('#weatherWeek').append('\n        <div class="col-5 weatherDay wow fadeInUp" data-wow-duration=\'.75s\' data-wow-delay="' + .15 * counter + 's" data-wow-offset="12">\n          <div class="weatherDate">' + parseDate(day.dt_txt) + '</div>\n          <div class="weatherSafety">' + checkSafety(day.weather[0].id, Math.round(day.wind.speed)) + '</div>\n          <div class="weatherIcon ' + getIcon(day.weather[0].id) + '"></div>\n          <div class="weatherDesc">' + Math.round(day.wind.speed) + ' mph, ' + degToCompass(day.wind.deg) + '</div>\n        </div>\n      ');
               counter++;
             }
             _context2.next = 16;
@@ -2239,8 +2239,8 @@ function getIcon(weatherID) {
   if (weatherID > 800) return 'cloudy';else if (weatherID == 800) return 'sunny';else if (weatherID >= 700) return 'flurries';else if (weatherID >= 600) return 'cloudy';else if (weatherID >= 500) return 'sun-shower';else if (weatherID >= 300) return 'rainy';else if (weatherID >= 200) return 'thunder-storm';
 }
 
-function checkSafety(weatherID) {
-  if (weatherID > 800) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>';else if (weatherID == 800) return '<p class="good"><i class="fa fa-check"></i>clear skies</p>';else if (weatherID >= 700) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 600) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i> ow visibility</p>';else if (weatherID >= 500) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 300) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 200) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';
+function checkSafety(weatherID, windSpeed) {
+  if (windSpeed > 10) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (windSpeed > 5) return '<p class="bad"><i class="fa fa-times-circle"></i>slight winds</p>';else if (weatherID > 800) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>';else if (weatherID == 800) return '<p class="good"><i class="fa fa-check"></i>clear skies</p>';else if (weatherID >= 700) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 600) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>';else if (weatherID >= 500) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 300) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';else if (weatherID >= 200) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>';
 }
 
 // This function will add all the child elements needed for each weather icon
