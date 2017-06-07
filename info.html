@@ -14,46 +14,62 @@
 <!-- user stylesheet-->
 <link rel="stylesheet" href="./style-info.css">
 
-<div class="container container-top">
-  <div class="row">    
-    <div class="col-md-7 col-md-push-5 video">
-      <img class="img-responsive img-main" src="http://res.cloudinary.com/isaacabrahamson/image/upload/h_650//4e061939-6872-4400-93f7-df82ac074a2c_sgracl.png"/> 
-    </div>
-    <div class="col-md-5 col-md-pull-7">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Duis facilisis elit sit</span> amet neque lobortis ultricies. Vivamus ut accumsan risus. Morbi euismod non tortor quis lobortis. Vivamus ut nisi quis arcu iaculis venenatis. Duis semper sollicitudin diam, ut efficitur nisl mattis id.  Donec lobortis viverra elit, in ullamcorper nibh imperdiet tempor.</p>
+<main>
+  <div class="container container-top">
+    <div class="row">    
+      <div class="col-md-7 col-md-push-5 video">
+        <img class="img-responsive img-main" src="http://res.cloudinary.com/isaacabrahamson/image/upload/h_650//4e061939-6872-4400-93f7-df82ac074a2c_sgracl.png"/> 
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Duis facilisis elit sit</span> amet neque lobortis ultricies. Vivamus ut accumsan risus. Morbi euismod non tortor quis lobortis. Vivamus ut nisi quis arcu iaculis venenatis. Duis semper sollicitudin diam, ut efficitur nisl   mattis id.  Donec lobortis viverra elit, in ullamcorper nibh imperdiet tempor.</p>
+      </div>
     </div>
   </div>
-</div>
+  
+  <hr>
+  
+  <div class="container container-me">
+    <h2><span>About</span> the pilot</h2>
+    <img class="center-block avatar" src="http://res.cloudinary.com/isaacabrahamson/image/upload/h_200,w_200,c_fill/20170507_154056_-_Copy_ytalqu.jpg"/>
+    <h3>Jeremy Zobel</h3>
+    <p class="caption">Owner, Pilot</p>
+    <p>Aliquam faucibus enim vitae lacus molestie pulvinar. <span>Quisque pretium purus in odio</span> lobortis porta. Fusce at fermentum metus. Vivamus euismod sit amet velit eu mollis. Vestibulum ac tempus risus, eget semper erat. Phasellus volutpat eleifend sodales. In hac habitasse platea   dictumst. Suspendisse <span>eget semper dui</span>, sed consequat nisi. Cras ac velit id neque pretium luctus. Donec dictum mi sit amet mi ultricies, at feugiat dui bibendum. Integer iaculis eros mauris, ullamcorper pulvinar diam lacinia quis.</p>
+  </div>
+  
+  <hr class="location">
+  
+  <h2><span>Flight</span> locations</h2>
+  <p class="location-info">I am located in Tipton, Iowa, and fly primarily within a 40 mile radius.</p>
+  <div class="container map-container center-block">
+    <div id="map"></div>
+  </div>
+  
+  <nav>
+    <div class="nav-inner animated fadeInDown">
+      <a class="logo" href="/">ZAP</a>
+      <ul>
+        <li><a href="info">info</a></li>
+        <li><a href="https://www.myportfolio.com" data-scroll>portfolio</a></li>
+        <li class="contact-link"><a href="/#contact" data-scroll>contact</a></li>
+        <li class="mobile-menu"><a data-scroll><i class="fa fa-bars"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+</main>
 
-<hr>
-
-<div class="container container-me">
-  <h2><span>About</span> the pilot</h2>
-  <img class="center-block avatar" src="http://res.cloudinary.com/isaacabrahamson/image/upload/h_200,w_200,c_fill/20170507_154056_-_Copy_ytalqu.jpg"/>
-  <h3>Jeremy Zobel</h3>
-  <p class="caption">Owner, Pilot</p>
-  <p>Aliquam faucibus enim vitae lacus molestie pulvinar. <span>Quisque pretium purus in odio</span> lobortis porta. Fusce at fermentum metus. Vivamus euismod sit amet velit eu mollis. Vestibulum ac tempus risus, eget semper erat. Phasellus volutpat eleifend sodales. In hac habitasse platea dictumst. Suspendisse <span>eget semper dui</span>, sed consequat nisi. Cras ac velit id neque pretium luctus. Donec dictum mi sit amet mi ultricies, at feugiat dui bibendum. Integer iaculis eros mauris, ullamcorper pulvinar diam lacinia quis.</p>
-</div>
-
-<hr class="location">
-
-<h2><span>Flight</span> locations</h2>
-<p class="location-info">I am located in Tipton, Iowa, and fly primarily within a 40 mile radius.</p>
-<div class="container map-container center-block">
-  <div id="map"></div>
-</div>
-
-<nav>
-  <div class="nav-inner animated fadeInDown">
-    <a class="logo" href="/">ZAP</a>
+<section id="mobile-dropdown">
+  <div class="dropdown-row">
+    <div class="logo">ZAP</div>
+    <div class="exit"><i class="fa fa-times"></i></div>
+  </div>
+  <div class="dropdown-links">
     <ul>
-      <li><a href="info">info</a></li>
-      <li><a href="/#portfolio" data-scroll>portfolio</a></li>
-      <li><a href="/#contact" data-scroll>contact</a></li>
-      <li class="mobile-menu"><a data-scroll><i class="fa fa-bars"></i></a></li>
-    </ul>
+        <li><a href="info">info</a></li>
+        <li><a href="https://www.myportfolio.com" data-scroll>portfolio</a></li>
+        <li class="contact-link"><a href="/#contact" data-scroll>contact</a></li>
+      </ul>
   </div>
-</nav>
+</section>
 
 <script>
   function initMap() {
@@ -81,3 +97,5 @@
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmWXInPHpvfgzc42kQ_HwXeIZf9JOoh5k&callback=initMap"></script>
+<script src="./jquery.min.js"></script>
+<script src="./info.js"></script>
