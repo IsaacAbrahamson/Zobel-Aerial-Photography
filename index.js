@@ -2278,7 +2278,7 @@ $(document).ready(function () {
     $('main').addClass('noscroll');
     $('#mobile-dropdown').css('top', '0vh');
     document.ontouchmove = function (e) {
-      e.preventDefault();
+      return e.preventDefault();
     };
   });
 
