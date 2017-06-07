@@ -57,10 +57,6 @@ nav li.contact-link {
   margin-right: 0px;
 }
 
-nav li.mobile-menu {
-  margin-right: 0px;
-}
-
 nav a, nav a:hover, nav a:active, nav a:visited {
   color: white;
   text-decoration: none;
@@ -71,6 +67,11 @@ nav a, nav a:hover, nav a:active, nav a:visited {
 
 nav a:hover {
   color: rgba(255, 255, 255, 0.6)
+}
+
+nav li.mobile-menu {
+  display: none;  
+  margin-right: 0px;
 }
 
 .mobile-menu i {  
@@ -88,11 +89,11 @@ nav a:hover {
     width: 75%;
   }
 
-  nav.desktop-nav {
+  nav li {
     display: none;
   }
 
-  nav.mobile-nav {
+  nav li.mobile-menu {
     display: block;
   }
 }
@@ -1072,4 +1073,13 @@ footer a, footer a:hover, footer a:active, footer a:visited {
   .col-5:nth-child(5) {
     display: none;
   }
+}
+
+main {
+  z-index: 100;
+}
+
+#mobile-menu {
+  display: none;
+  z-index: 200;
 }
