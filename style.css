@@ -1108,8 +1108,7 @@ main.noscroll {
   float: right;
   color: #4a4a4a;
   font-size: 45px;
-  line-height: 109%;
-  margin-top: 4px;
+  height: 100%;
 }
 
 .dropdown-row {  
@@ -1140,8 +1139,7 @@ main.noscroll {
     line-height: 110%;
   }
   #mobile-dropdown .exit {
-    font-size: 32px;
-    margin-top: 7px;
+    font-size: 37px;
   }
 }
 

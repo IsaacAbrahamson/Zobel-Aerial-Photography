@@ -2217,8 +2217,6 @@ var updatePage = function () {
   };
 }();
 
-// updatePage()
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 Sugar.extend
@@ -2272,6 +2270,8 @@ function degToCompass(num) {
   var arr = ["north", "north", "north-east", "east", "east", "east", "south-east", "south", "south", "south", "south-west", "west", "west", "west", "north-west", "north"];
   return arr[val % 16];
 }
+
+updatePage();
 
 $(document).ready(function () {
   $('.mobile-menu').click(function () {

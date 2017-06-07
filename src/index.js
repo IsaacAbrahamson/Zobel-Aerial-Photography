@@ -101,7 +101,7 @@ async function updatePage() {
   
 }
 
-// updatePage()
+updatePage()
 
 $(document).ready(() => {
   $('.mobile-menu').click(() => {
