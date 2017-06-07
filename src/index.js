@@ -101,4 +101,16 @@ async function updatePage() {
   
 }
 
-updatePage()
+// updatePage()
+
+$(document).ready(() => {
+  $('.mobile-menu').click(() => {
+    $('main').addClass('noscroll')
+    $('#mobile-dropdown').css('top', '0vh')
+  })
+
+  $('.exit').click(() => {
+    $('main').removeClass('noscroll')
+    $('#mobile-dropdown').css('top', '-100vh')
+  })
+})

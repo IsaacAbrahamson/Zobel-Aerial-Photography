@@ -2217,6 +2217,8 @@ var updatePage = function () {
   };
 }();
 
+// updatePage()
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 Sugar.extend
@@ -2271,6 +2273,16 @@ function degToCompass(num) {
   return arr[val % 16];
 }
 
-updatePage();
+$(document).ready(function () {
+  $('.mobile-menu').click(function () {
+    $('main').addClass('noscroll');
+    $('#mobile-dropdown').css('top', '0vh');
+  });
+
+  $('.exit').click(function () {
+    $('main').removeClass('noscroll');
+    $('#mobile-dropdown').css('top', '-100vh');
+  });
+});
 
 },{"babel-runtime/core-js/get-iterator":1,"babel-runtime/helpers/asyncToGenerator":3,"babel-runtime/regenerator":4}]},{},[73]);

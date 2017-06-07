@@ -1075,11 +1075,86 @@ footer a, footer a:hover, footer a:active, footer a:visited {
   }
 }
 
-main {
+main.noscroll {
   z-index: 100;
+  position: fixed;
+  overflow: hidden;
 }
 
-#mobile-menu {
-  display: none;
+#mobile-dropdown {
+  display: block;
   z-index: 200;
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: -100vh;
+  background: white;
+  transition: top 150ms ease-in-out;
+  text-align: center;
+}
+
+#mobile-dropdown .logo {
+  float: left;
+  color: #4a4a4a;
+  font-family: logo;
+  font-size: 50px;
+  border-top: 3px solid #48a8ff;
+  border-bottom: 3px solid #48a8ff;
+  line-height: 109%;
+}
+
+#mobile-dropdown .exit {
+  float: right;
+  color: #4a4a4a;
+  font-size: 45px;
+  line-height: 109%;
+  margin-top: 4px;
+}
+
+.dropdown-row {  
+  margin-top: 40px;
+  width: 70%;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1300px) {
+  .dropdown-row {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dropdown-row {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .dropdown-row {
+    margin-top: 20px;
+  }
+
+  #mobile-dropdown .logo {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  #mobile-dropdown .exit {
+    font-size: 32px;
+    margin-top: 7px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .dropdown-row {
+    margin-top: 20px;
+  }
+
+  .dropdown-row .logo {
+    font-size: 40px;
+    line-height: 110%;
+  }
+  .dropdown-row i {  
+    font-size: 28px;
+  }
 }
