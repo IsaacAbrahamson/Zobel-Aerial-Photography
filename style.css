@@ -1139,11 +1139,11 @@ main.noscroll {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #eee;
 }
 
-.dropdown-links li:first-child {
+.dropdown-links li:nth-child(2) {
   border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .dropdown-links a {
