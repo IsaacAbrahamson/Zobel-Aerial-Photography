@@ -2282,7 +2282,7 @@ $(document).ready(function () {
     };
   });
 
-  $('.exit').click(function () {
+  $('.exit, .dropdown-links li:nth-child(3)').click(function () {
     $('main').removeClass('noscroll');
     $('#mobile-dropdown').css('top', '-100vh');
     document.ontouchmove = function () {

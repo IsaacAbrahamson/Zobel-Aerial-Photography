@@ -110,7 +110,7 @@ $(document).ready(() => {
     document.ontouchmove = (e) => e.preventDefault()
   })
 
-  $('.exit').click(() => {
+  $('.exit, .dropdown-links li:nth-child(3)').click(() => {
     $('main').removeClass('noscroll')
     $('#mobile-dropdown').css('top', '-100vh')
     document.ontouchmove = () => true
