@@ -16,6 +16,10 @@ h1, h2, h3, h4, p, a {
 
 /* nav and header */
 
+.mobile-nav {
+  display: none;
+}
+
 nav {
   position: absolute;
   top: 40px;
@@ -53,6 +57,10 @@ nav li.contact-link {
   margin-right: 0px;
 }
 
+nav li.mobile-menu {
+  margin-right: 0px;
+}
+
 nav a, nav a:hover, nav a:active, nav a:visited {
   color: white;
   text-decoration: none;
@@ -63,11 +71,6 @@ nav a, nav a:hover, nav a:active, nav a:visited {
 
 nav a:hover {
   color: rgba(255, 255, 255, 0.6)
-}
-
-nav li.mobile-menu {
-  display: none;  
-  margin-right: 0px;
 }
 
 .mobile-menu i {  
@@ -85,11 +88,11 @@ nav li.mobile-menu {
     width: 75%;
   }
 
-  nav li {
+  nav.desktop-nav {
     display: none;
   }
 
-  nav li.mobile-menu {
+  nav.mobile-nav {
     display: block;
   }
 }
