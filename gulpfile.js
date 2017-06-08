@@ -4,7 +4,7 @@ const surge = require('gulp-surge')
 
 gulp.task('build', shell.task([
   'echo Transpiling ./src/index.js',
-  'npm-run browserify -t babelify ./src/index.js > ./index.js',
+  'npm-run browserify -o index.js -t babelify ./src/index.js',
   'echo Compressing ./index.js',  
   'minify ./index.js',
   'echo Compressing ./style.css',

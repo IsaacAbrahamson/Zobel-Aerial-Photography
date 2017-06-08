@@ -18,6 +18,10 @@
     "gulp-surge": "^0.1.0",
     "minifier": "^0.8.1",
     "pug-cli": "^1.0.0-alpha6",
+    "rollup": "^0.42.0",
     "surge": "^0.19.0"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^2.0.3"
   }
 }
