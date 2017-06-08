@@ -1,0 +1,67 @@
+@font-face {
+  font-family: logo;
+  src: url(./fonts/blade.woff) format('woff');
+}
+
+#loader {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: #fff;
+   z-index: 9999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 1;
+   transition: opacity 300ms ease-out;
+}
+
+.loader-container {
+  position: relative;
+}
+
+#loader .logo {
+  color: #4a4a4a;
+  font-size: 50px;
+  display: inline-block;
+  font-family: logo;
+}
+
+.top-bar {  
+  height: 3px;  
+  background: #48a8ff;
+  width: 30%;  
+  position: absolute;
+  left: 0;
+  animation: top-bar 1s infinite linear alternate;
+}
+
+.bottom-bar {
+  height: 3px;  
+  background: #48a8ff;
+  width: 30%;
+  position: absolute;
+  right: 0;
+  animation: bottom-bar 1s infinite linear alternate;
+}
+
+@keyframes top-bar {
+  from {
+    width: 65%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes bottom-bar {
+  from {
+    width: 65%;
+  }
+  to {
+    width: 100%;
+  }
+}
