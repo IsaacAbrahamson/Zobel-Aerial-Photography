@@ -2271,8 +2271,21 @@ function degToCompass(num) {
   return arr[val % 16];
 }
 
-updatePage();
+updatePage
 
+// Page Loader
+();document.ontouchmove = function (e) {
+  return e.preventDefault();
+};
+window.onload = function () {
+  document.getElementById("loader").style.opacity = "0";
+  document.querySelector("main").classList.remove("noscroll");
+  document.ontouchmove = function () {
+    return true;
+  };
+};
+
+// Mobile Menu
 $(document).ready(function () {
   $('.mobile-menu').click(function () {
     $('main').addClass('noscroll');

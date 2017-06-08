@@ -105,6 +105,15 @@ async function updatePage() {
 
 updatePage()
 
+// Page Loader
+document.ontouchmove = (e) => e.preventDefault()
+window.onload = () => {
+  document.getElementById("loader").style.opacity = "0"
+  document.querySelector("main").classList.remove("noscroll")
+  document.ontouchmove = () => true
+}
+
+// Mobile Menu
 $(document).ready(() => {
   $('.mobile-menu').click(() => {
     $('main').addClass('noscroll')
