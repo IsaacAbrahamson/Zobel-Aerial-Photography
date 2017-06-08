@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: logo;
-  src: url(./fonts/blade.ttf);
+  src: url(./fonts/blade.woff);
 }
 
 ::selection {

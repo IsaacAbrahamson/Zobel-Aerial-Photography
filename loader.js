@@ -1,11 +1,11 @@
-document.ontouchmove = (e) => e.preventDefault()
+document.ontouchmove = function(e) { e.preventDefault() }
 
-window.onload = () => {
+window.onload = function() {
   document.getElementById("loader").style.opacity = "0"
   // wait for animation to end and then remove
-  setTimeout(() => document.getElementById("loader").style.display = "none", 300)
+  setTimeout(function() { document.getElementById("loader").style.display = "none", 300 })
 
   // enable scrolling
   document.querySelector("main").classList.remove("noscroll")
-  document.ontouchmove = () => true
+  document.ontouchmove = function() { return true }
 }
