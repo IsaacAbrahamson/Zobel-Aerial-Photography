@@ -2273,26 +2273,8 @@ function degToCompass(num) {
 
 updatePage
 
-// Page Loader
-();document.ontouchmove = function (e) {
-  return e.preventDefault();
-};
-window.onload = function () {
-  document.getElementById("loader").style.opacity = "0";
-  // wait for animation to end and then remove
-  setTimeout(function () {
-    return document.getElementById("loader").style.display = "none";
-  }, 300
-
-  // enable scrolling
-  );document.querySelector("main").classList.remove("noscroll");
-  document.ontouchmove = function () {
-    return true;
-  };
-};
-
 // Mobile Menu
-$(document).ready(function () {
+();$(document).ready(function () {
   $('.mobile-menu').click(function () {
     $('main').addClass('noscroll');
     $('#mobile-dropdown').css('top', '0vh');

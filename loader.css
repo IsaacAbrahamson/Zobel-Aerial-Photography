@@ -27,7 +27,7 @@
   color: #4a4a4a;
   font-size: 50px;
   display: inline-block;
-  font-family: logo;
+  font-family: logo, Courier New, Courier, monospace;
 }
 
 .top-bar {  
