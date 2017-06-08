@@ -2279,7 +2279,13 @@ updatePage
 };
 window.onload = function () {
   document.getElementById("loader").style.opacity = "0";
-  document.querySelector("main").classList.remove("noscroll");
+  // wait for animation to end and then remove
+  setTimeout(function () {
+    return document.getElementById("loader").style.display = "none";
+  }, 300
+
+  // enable scrolling
+  );document.querySelector("main").classList.remove("noscroll");
   document.ontouchmove = function () {
     return true;
   };
