@@ -1,7 +1,4 @@
-@font-face {
-  font-family: logo;
-  src: url(./fonts/blade.woff) format('woff');
-}
+/* Credit: https://codepen.io/cbhoweth/pen/GJYWye */
 
 #loader {
    width: 100%;
@@ -19,49 +16,26 @@
    transition: opacity 300ms ease-out;
 }
 
-.loader-container {
-  position: relative;
+#loading-bar-spinner.spinner {
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    z-index: 19 !important;
+    animation: loading-bar-spinner 400ms linear infinite;
 }
 
-#loader .logo {
-  color: #4a4a4a;
-  font-size: 50px;
-  display: inline-block;
-  font-family: logo, Courier New, Courier, monospace;
+#loading-bar-spinner.spinner .spinner-icon {
+    width: 40px;
+    height: 40px;
+    border:  solid 4px transparent;
+    border-top-color:  #1f8ceb !important;
+    border-left-color: #1f8ceb !important;
+    border-radius: 50%;
 }
 
-.top-bar {  
-  height: 3px;  
-  background: #48a8ff;
-  width: 30%;  
-  position: absolute;
-  left: 0;
-  animation: top-bar 1s infinite linear alternate;
-}
-
-.bottom-bar {
-  height: 3px;  
-  background: #48a8ff;
-  width: 30%;
-  position: absolute;
-  right: 0;
-  animation: bottom-bar 1s infinite linear alternate;
-}
-
-@keyframes top-bar {
-  from {
-    width: 65%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes bottom-bar {
-  from {
-    width: 65%;
-  }
-  to {
-    width: 100%;
-  }
+@keyframes loading-bar-spinner {
+  0%   { transform: rotate(0deg);   transform: rotate(0deg); }
+  100% { transform: rotate(360deg); transform: rotate(360deg); }
 }
