@@ -477,8 +477,81 @@ h2 span {
 }
 
 #portfolio .container-fluid {
-  margin-top: 80px;
-  width: 95%;
+  margin-top: 120px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1450px) {
+  #portfolio .container-fluid {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #portfolio .container-fluid {
+    width: 80%;
+  }
+
+  #portfolio .hidden-md {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #portfolio .container-fluid {
+    width: 95%;
+  }
+}
+
+#portfolio {
+  text-align: center;
+}
+
+.full-portfolio {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#portfolio p {
+  color: #4a4a4a;
+  font-weight: 200;
+  font-size: 20px; 
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1450px) {
+  #portfolio p {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  #portfolio p {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #portfolio p {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  #portfolio p {
+    width: 80%;
+  }
+}
+
+#portfolio .btn {
+  margin-top: 30px;
+}
+
+#portfolio .row {  
+  margin-bottom: 5%;
 }
 
 .row-top {  
@@ -499,7 +572,14 @@ h2 span {
 
 .col-img {  
   height: 100%;
-  margin-bottom: 30px;
+}
+
+.col-left {
+  padding-right: 2.5%;
+}
+
+.col-right {
+  padding-left: 2.5%;
 }
 
 .img-box {
@@ -507,24 +587,58 @@ h2 span {
   background-size: cover!important;
   background-position: center!important;
   background-repeat: no-repeat!important;  
-  box-shadow:0 1px 20px rgba(0, 0, 0, 0.3);
+  box-shadow:0 1px 10px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
-.img-box:before, .img-box:after {
-	content:"";
-    position:absolute;
-    z-index:-1;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    border-radius:100px / 10px;
+@media only screen and (max-width: 1199px) {
+  .row-top {  
+    height: 450px;
+  }
+
+  .row-bottom {
+    height: 450px;
+  }
+  
+  .col-left {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .col-right {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #portfolio .row {  
+    margin-bottom: 40px;
+  }
 }
-.img-box:after {
-	right:10px;
-  left:auto;
+
+@media only screen and (max-width: 600px) {
+  .row-top {  
+    height: 380px;
+  }
+
+  .row-bottom {
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .row-top {  
+    height: 350px;
+  }
+
+  .row-bottom {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 30px;
+  }
 }
 
 
