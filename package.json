@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "Developed by Isaac Abrahamson for Zobel Aerial Photography",
   "scripts": {
-    "start": "start index.html",
-    "postinstall": "gulp"
+    "start": "google-chrome index.html",
+    "start-windows": "google-chrome index.html"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -14,6 +14,7 @@
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
     "gulp": "^3.9.1",
+    "gulp-if-else": "^1.0.3",
     "gulp-shell": "^0.6.3",
     "gulp-surge": "^0.1.0",
     "minifier": "^0.8.1",
@@ -22,6 +23,7 @@
     "surge": "^0.19.0"
   },
   "dependencies": {
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.3",
+    "promise-polyfill": "^6.0.2"
   }
 }

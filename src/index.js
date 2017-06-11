@@ -31,8 +31,8 @@ function getIcon(weatherID) {
 }
 
 function checkSafety(weatherID, windSpeed) {
-  if (windSpeed > 10) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
-  else if (windSpeed > 6) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>slight winds</p>'
+  if (windSpeed >= 20) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
+  else if (windSpeed >= 15) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>slight winds</p>'
   else if (weatherID > 800) return '<p class="okay"><i class="fa fa-exclamation-triangle"></i>low visibility</p>'
   else if (weatherID == 800) return '<p class="good"><i class="fa fa-check"></i>clear skies</p>'
   else if (weatherID >= 700) return '<p class="bad"><i class="fa fa-times-circle"></i>not available</p>'
@@ -82,14 +82,14 @@ async function getWeather() {
     return forecast
   } else {
       return undefined
-  }  
+  }
 }
 
 async function updatePage() {
   let week = await getWeather()
   if (week) {
     let counter = 1;
-    for (let day of week) {  
+    for (let day of week) {
       $('#weatherWeek').append(`
         <div class="col-5 weatherDay wow fadeInUp" data-wow-duration='.75s' data-wow-delay="${.15 * counter}s" data-wow-offset="12">
           <div class="weatherDate">${parseDate(day.dt_txt)}</div>
@@ -105,7 +105,7 @@ async function updatePage() {
     // browser does not support fetch data or an error occured
     $('#weather').remove()
   }
-  
+
 }
 
 updatePage()
