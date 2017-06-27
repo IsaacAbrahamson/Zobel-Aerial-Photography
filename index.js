@@ -2929,7 +2929,7 @@ Sugar.extend
 // Init smooth scrolling
 ();smoothScroll.init();
 
-var WEATHER_LINK = 'http://api.openweathermap.org/data/2.5/forecast?q=IowaCity&appid=fd99e0cd863cff15807add93a82c79a7';
+var WEATHER_LINK = 'http://api.openweathermap.org/data/2.5/forecast?q=IowaCity&appid=a485e3192628137c8f5dc1bad085bf56';
 
 // // stateless protocol required for OpenWeatherMap API
 // $(document).ready(function changeProtocol() {
