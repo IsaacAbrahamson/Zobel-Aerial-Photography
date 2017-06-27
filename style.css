@@ -6,7 +6,7 @@
 }
 
 ::selection {
-  background: rgba(31, 140, 235, 0.2); 
+  background: rgba(31, 140, 235, 0.2);
 }
 
 h1, h2, h3, h4, p, a {
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 nav li.mobile-menu {
-  display: none;  
+  display: none;
   margin-right: 0px;
 }
 
@@ -78,7 +78,7 @@ nav li.mobile-menu {
   color: white;
 }
 
-.mobile-menu i {  
+.mobile-menu i {
   font-size: 35px;
 }
 
@@ -113,7 +113,7 @@ nav li.mobile-menu {
     border-bottom: 3px solid #48a8ff;
     line-height: 110%;
   }
-  .mobile-menu i {  
+  .mobile-menu i {
     font-size: 28px;
   }
 }
@@ -129,7 +129,7 @@ nav li.mobile-menu {
     border-bottom: 3px solid #48a8ff;
     line-height: 110%;
   }
-  .mobile-menu i {  
+  .mobile-menu i {
     font-size: 28px;
   }
 }
@@ -140,12 +140,12 @@ header {
   overflow: hidden;
   /*background: #4a4a4a;*/
   background: url(http://res.cloudinary.com/isaacabrahamson/image/upload/w_1920,h_1080/header_fxhhdf.jpg) no-repeat center center fixed;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: scroll;
 }
 
 .overlay-header {
-  display: flex; 
+  display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -325,7 +325,7 @@ hr {
   }
 }
 
-@media only screen and (max-width: 390px) {  
+@media only screen and (max-width: 390px) {
   .btn, .btn:hover, .btn:active, .btn:visited {
     margin-top: 40px;
   }
@@ -362,7 +362,7 @@ hr {
 
 
 /* about */
-#about {  
+#about {
   margin-top: 120px;
 }
 
@@ -429,7 +429,7 @@ hr {
     margin-bottom: 100px;
   }
 
-  #about p, #about .drone-link {    
+  #about p, #about .drone-link {
     font-size: 20px;
   }
 }
@@ -457,7 +457,7 @@ hr {
     width: 95%;
   }
 
-  #about p, #about .drone-link {    
+  #about p, #about .drone-link {
     font-size: 17px;
   }
 }
@@ -515,7 +515,7 @@ h2 span {
 #portfolio p {
   color: #4a4a4a;
   font-weight: 200;
-  font-size: 20px; 
+  font-size: 20px;
   display: block;
   width: 60%;
   margin-left: auto;
@@ -550,19 +550,19 @@ h2 span {
   margin-top: 30px;
 }
 
-#portfolio .row {  
+#portfolio .row {
   margin-bottom: 5%;
 }
 
-.row-top {  
+.row-top {
   height: 500px;
 }
 
-.row-middle {  
+.row-middle {
   height: 600px;
 }
 
-.row-full {  
+.row-full {
   height: 400px;
 }
 
@@ -570,7 +570,7 @@ h2 span {
   height: 600px;
 }
 
-.col-img {  
+.col-img {
   height: 100%;
 }
 
@@ -586,37 +586,37 @@ h2 span {
   height: 100%;
   background-size: cover!important;
   background-position: center!important;
-  background-repeat: no-repeat!important;  
+  background-repeat: no-repeat!important;
   box-shadow:0 1px 10px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
 @media only screen and (max-width: 1199px) {
-  .row-top {  
+  .row-top {
     height: 450px;
   }
 
   .row-bottom {
     height: 450px;
   }
-  
+
   .col-left {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
   .col-right {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #portfolio .row {  
+  #portfolio .row {
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .row-top {  
+  .row-top {
     height: 380px;
   }
 
@@ -626,7 +626,7 @@ h2 span {
 }
 
 @media only screen and (max-width: 400px) {
-  .row-top {  
+  .row-top {
     height: 350px;
   }
 
@@ -652,12 +652,12 @@ h2 span {
 
 .overlay {
   background: rgba(31, 140, 235, 0.7);
-  height: 100%;    
+  height: 100%;
   padding-top: 80px;
   text-align: center;
 }
 
-#contact h2 { 
+#contact h2 {
   margin-top: 0;
   color: white;
 }
@@ -671,12 +671,16 @@ h2 span {
   margin-top: 10px;
   margin-bottom: 20px;
   display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-right: 25%;
+  padding-left: 25%;
 }
 
 #contact .text-container p {
   color: white;
   font-weight: 200;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .icon-container {
@@ -685,7 +689,7 @@ h2 span {
   margin-bottom: 420px;
 }
 
-.row-icon {  
+.row-icon {
   display: inline-block;
   float: left;
   clear: left;
@@ -702,13 +706,6 @@ h2 span {
 }
 
 @media only screen and (max-width: 800px) {
-  #contact .text-container {
-    width: 100%;
-    text-align: center;
-    padding-right: 25%;
-    padding-left: 25%;
-  }
-
   #contact .text-container p {
     text-align: left;
   }
@@ -757,7 +754,7 @@ h2 span {
     color: white;
     font-size: 17px;
   }
-  
+
   .icon-container {
     margin-bottom: 280px;
   }
@@ -801,7 +798,7 @@ h2 span {
   font-size: 1em; /* control icon size here */
 }
 
-.weatherSafety i {  
+.weatherSafety i {
   margin-right: 6px;
 }
 
@@ -833,8 +830,8 @@ hr.bottom {
   margin-top: 80px;
 }
 
-footer {  
-  margin-top: 60px;  
+footer {
+  margin-top: 60px;
   margin-bottom: 60px;
 }
 
@@ -1079,7 +1076,7 @@ footer a, footer a:hover, footer a:active, footer a:visited {
 }
 
 
-/* Animations */ 
+/* Animations */
 
 @keyframes spin {
   100% { transform: rotate(360deg); }
@@ -1229,7 +1226,7 @@ main.noscroll {
   height: 100%;
 }
 
-.dropdown-row {  
+.dropdown-row {
   padding-top: 40px;
   width: 70%;
   display: inline-block;
@@ -1301,18 +1298,18 @@ main.noscroll {
     font-size: 40px;
     line-height: 110%;
   }
-  .dropdown-row i {  
+  .dropdown-row i {
     font-size: 37px;
   }
 }
 
-@media only screen and (max-height: 500px) {  
+@media only screen and (max-height: 500px) {
   .dropdown-links ul {
     width: 100%;
     padding-top: 40px;
     height: 90%;
   }
-  
+
   .dropdown-links a {
     font-size: 24px;
   }
