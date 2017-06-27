@@ -6,7 +6,7 @@
 }
 
 ::selection {
-  background: rgba(31, 140, 235, 0.2); 
+  background: rgba(31, 140, 235, 0.2);
 }
 
 h1, h2, h3, h4, p, a {
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 nav li.mobile-menu {
-  display: none;  
+  display: none;
   margin-right: 0px;
 }
 
@@ -78,7 +78,7 @@ nav li.mobile-menu {
   color: white;
 }
 
-.mobile-menu i {  
+.mobile-menu i {
   font-size: 35px;
 }
 
@@ -113,7 +113,7 @@ nav li.mobile-menu {
     border-bottom: 3px solid #48a8ff;
     line-height: 110%;
   }
-  .mobile-menu i {  
+  .mobile-menu i {
     font-size: 28px;
   }
 }
@@ -129,7 +129,7 @@ nav li.mobile-menu {
     border-bottom: 3px solid #48a8ff;
     line-height: 110%;
   }
-  .mobile-menu i {  
+  .mobile-menu i {
     font-size: 28px;
   }
 }
@@ -143,7 +143,16 @@ nav li.mobile-menu {
 .container-me {
   margin-top: 120px;
 }
-.container-top {  
+
+.container-trust {
+  margin-top: 120px;
+}
+
+.container-trust h2 {
+  margin-bottom: 60px;
+}
+
+.container-top {
   margin-top: 180px;
   margin-bottom: 120px;
 }
@@ -155,7 +164,7 @@ nav li.mobile-menu {
 }
 
 @media only screen and (max-width: 991px) {
-  .container {  
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -166,19 +175,19 @@ nav li.mobile-menu {
 }
 
 @media only screen and (max-width: 800px) {
-  .container-top {  
+  .container-top {
     margin-top: 150px;
   }
 }
 
 @media only screen and (max-width: 420px) {
-  .container-top {  
+  .container-top {
     margin-top: 100px;
   }
 }
 
 @media only screen and (max-height: 600px) {
-  .container-top {  
+  .container-top {
     margin-top: 100px;
   }
 }
@@ -216,7 +225,7 @@ img.avatar {
 }
 
 h3 {
-  font-size: 22px;  
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
@@ -226,6 +235,14 @@ p.caption {
   text-align: center;
   margin-top: 0;
   margin-bottom: 40px;
+}
+
+em {
+  font-style: italic;
+}
+
+.p-spacer {
+  margin-right: 50px;
 }
 
 p {
@@ -368,7 +385,7 @@ main.noscroll {
   height: 100%;
 }
 
-.dropdown-row {  
+.dropdown-row {
   padding-top: 40px;
   width: 70%;
   display: inline-block;
@@ -440,18 +457,18 @@ main.noscroll {
     font-size: 40px;
     line-height: 110%;
   }
-  .dropdown-row i {  
+  .dropdown-row i {
     font-size: 37px;
   }
 }
 
-@media only screen and (max-height: 500px) {  
+@media only screen and (max-height: 500px) {
   .dropdown-links ul {
     width: 100%;
     padding-top: 40px;
     height: 90%;
   }
-  
+
   .dropdown-links a {
     font-size: 24px;
   }
