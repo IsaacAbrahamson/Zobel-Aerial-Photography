@@ -1,6 +1,6 @@
 # Zobel Aerial Photography
 
-![image](https://user-images.githubusercontent.com/17521691/183298654-6ed0868f-7dbf-4ca9-b221-e63581b93e13.png)
+![zap](https://user-images.githubusercontent.com/17521691/183298682-ed3808d0-6888-453a-87e2-6c75392c3c2b.png)
 
 I developed this website while I was still in highschool during 2017. I had been developing websites for about a year at this point, and one of my friends asked for help making a website for his drone side hustle.
 
