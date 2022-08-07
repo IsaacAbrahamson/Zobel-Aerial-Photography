@@ -1,6 +1,6 @@
 # Zobel Aerial Photography
 
-Custom small business website created in 2017.
+Small Business Website Created in 2017 
 
 https://zap.iabrahamson.com/
 
