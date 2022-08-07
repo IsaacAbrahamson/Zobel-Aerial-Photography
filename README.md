@@ -2,7 +2,7 @@
 
 Custom small business website created in 2017.
 
-http://zap.iabrahamson.com/
+https://zap.iabrahamson.com/
 
 ## Overview
 
