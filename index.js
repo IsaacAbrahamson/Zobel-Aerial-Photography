@@ -1,3 +1,10 @@
+/* Update 8/7/2022:
+ * Fixed API key to work again.
+ * I tried to update this to make it readable, but I honestly have no idea wtf I did here...
+ * I was using Gulp and Babel at that time to minify and polyfill files with absolutely no idea what I was doing lol.
+ * Skip to line 2939 to see some of the code, but all of the fetch and async code is hidden in a steaming mess of compiler vomit.
+ */
+
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 module.exports = { "default": require("core-js/library/fn/get-iterator"), __esModule: true };
 },{"core-js/library/fn/get-iterator":5}],2:[function(require,module,exports){
@@ -2929,7 +2936,7 @@ Sugar.extend
 // Init smooth scrolling
 ();smoothScroll.init();
 
-var WEATHER_LINK = 'http://api.openweathermap.org/data/2.5/forecast?q=IowaCity&appid=a485e3192628137c8f5dc1bad085bf56';
+var WEATHER_LINK = 'http://api.openweathermap.org/data/2.5/forecast?q=Iowa City&appid=a485e3192628137c8f5dc1bad085bf56';
 
 // // stateless protocol required for OpenWeatherMap API
 // $(document).ready(function changeProtocol() {

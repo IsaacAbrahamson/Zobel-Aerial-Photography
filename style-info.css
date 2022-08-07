@@ -23,6 +23,7 @@ h1, h2, h3, h4, p, a {
 nav {
   position: absolute;
   top: 40px;
+  left: 0;
   width: 100%;
   text-align: center;
 }
